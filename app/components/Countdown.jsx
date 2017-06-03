@@ -5,8 +5,7 @@ var Clock = require('Clock');
 var Countdown = (props) => {
   return (
     <div>
-        <h1>Countdown</h1>
-        <Clock/>
+        <Clock totalSeconds={129}/>
       </div>
   );
 };
