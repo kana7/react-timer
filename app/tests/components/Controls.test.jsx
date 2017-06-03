@@ -7,10 +7,12 @@ var TestUtils = require('react-addons-test-utils');
 var Controls = require('Controls');
 
 describe('Controls', () => {
+
   it('should exist', () => {
     expect(Controls).toExist();
   });
-  describe('render', function() => {
+
+  describe('render', () => {
 
     it('should render pause when started', () => {
       var controls = TestUtils.renderIntoDocument(<Controls countdownStatus="started"/>);
@@ -25,6 +27,5 @@ describe('Controls', () => {
       var $startButton = $el.find('button:contains(Start)');
       expect($startButton.length).toBe(1);
     });
-
   });
 });
